@@ -1,0 +1,44 @@
+<html lang="es">
+    <head>
+    <title>Mapbox básico</title>
+      <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="author" content="autor"/>
+      <meta name="description" content="descripción página">
+      <meta name="robots" content="index,follow">
+      <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.css" />
+      <script src="https://api.mapbox.com/mapbox-gl-js/v2.12.0/mapbox-gl.js"></script>
+      <style>
+        body {
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+        }
+        #map {
+          height: 100%;
+          width: 100%;
+        }
+       </style>
+   
+        <script>
+            var map;  // tambien const map;
+                function init() {
+                    mapboxgl.accessToken =
+                        'pk.eyJ1IjoidGlhbmxpbGxvIiwiYSI6ImNsY3ludnBmODBhY2Izcm5vYzRibzd3YXoifQ.gOZiyMs0U6_TPz_qK1nvIw';
+                    map = new mapboxgl.Map({
+                        container: 'map',
+                        style: 'mapbox://styles/tianlillo/clcz4quge015x14s18cknr26h',
+                        center: [2.16859, 41.3954],
+                        zoom: 13,
+                        attributionControl: false
+                    });
+    
+            }
+        </script>
+  
+    </head>
+    <body onLoad ="init()">
+        <div id="map"></div>
+    </body>
+</html>
+  
