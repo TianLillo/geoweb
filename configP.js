@@ -113,9 +113,9 @@ var config = {
             image: 'https://pbs.twimg.com/media/FoEcycwXwAAZm9S?format=jpg&name=large',
             description: 'Se suma la región de La Araucanía a la emergencia, además se confirma la muerte de una bombera en la comuna de Santa Juana región del Biobío y un helicoptero capotado en Galvarino región de La Araucanía mientras combatían los incendios, falleciendo el piloto y el mecánico.',
             location: {
-                center: [-71.02004, -38.11858],
-                zoom: 7,
-                pitch: 32.55,
+                center: [-70.94293, -37.80914],
+                zoom: 6.8,
+                pitch: 0,
                 bearing: 0,
                 speed: 0.3, //velocidad del flyto
             },
